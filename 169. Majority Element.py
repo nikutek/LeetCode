@@ -1,0 +1,10 @@
+class Solution:
+    def majorityElement(self, nums: list[int]) -> int:
+        
+        for i in set(nums):
+            if nums.count(i) > len(nums)/2: return i
+
+    
+
+solution = Solution()
+print(solution.majorityElement([3,2,3]))
