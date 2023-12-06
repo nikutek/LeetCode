@@ -1,17 +1,17 @@
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         shorter, longer = (str1, str2) if len(str1) < len(str2) else (str2, str1)
-        gcd= ""
-        for i in range(1, len(longer)//2+1):
-            print("start: " + longer[:i])
-            print("end: " + longer[-i:])
-            if longer[:i] == longer[-i:]:
-                gcd = longer[:i]
+        longestSubstring = ""
+        for substringLength in range(1, len(shorter)+1):
+            if len(shorter) % substringLength == 0 and len(longer) % substringLength == 0:
+                shortCombined = shorter[:substringLength] * (len(shorter)//substringLength)
+                longCombined = shorter[:substringLength] * (len(longer)//substringLength)
+                if shortCombined == shorter and longCombined == longer:
+                    print('short: ', shortCombined, "long: ", longCombined)
+                    longestSubstring = shorter[:substringLength]
 
-
-                # return gcd
-        return gcd
+        return longestSubstring
 
 
 solution = Solution()
-print(solution.gcdOfStrings(str1 = "ABABABAB", str2 = "ABAB"))
+print(solution.gcdOfStrings(str1 = "ABABAB", str2 = "ABAB"))
