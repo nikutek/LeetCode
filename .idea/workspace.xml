@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287e7b40-3b66-41c8-b0a8-986befd1c3df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/334. Increasing Triplet Subsequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/345. Reverse Vowels of a String.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +60,11 @@
           <url>file://$PROJECT_DIR$/334. Increasing Triplet Subsequence.py</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/345. Reverse Vowels of a String.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
